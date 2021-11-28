@@ -1,7 +1,10 @@
 import DynamicTabNavigator from './navigation/DynamicTabNavigator'
+import { StoreProvider } from './hooks/useStore'
 
 const App = () => {
-  return <DynamicTabNavigator />
+  return <StoreProvider>
+    <DynamicTabNavigator />
+  </StoreProvider>
 }
 
 export default App

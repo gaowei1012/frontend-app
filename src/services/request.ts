@@ -1,9 +1,5 @@
 import axios, { AxiosError, AxiosResponse } from 'axios'
 
-type methodsType = {
-  method: string | 'GET' | 'POST' | 'PUT' | 'DELETE'
-}
-
 export function request(url: string, method: any, data?: object) {
   return new Promise((resolve, reject) => {
     let body = method === "GET" ? "params" : "data";
