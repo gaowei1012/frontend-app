@@ -1,11 +1,11 @@
-import React from 'react'
+import * as React from 'react'
 import { View, SafeAreaView, Text } from 'react-native'
 
 const Home = () => {
   return (
     <SafeAreaView>
       <View>
-        <Text>home</Text>
+        <Text>首页</Text>
       </View>
     </SafeAreaView>
   )
