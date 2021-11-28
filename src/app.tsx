@@ -1,13 +1,7 @@
-import { SafeAreaView, View, Text } from 'react-native'
+import DynamicTabNavigator from './navigation/DynamicTabNavigator'
 
 const App = () => {
-  return (
-    <SafeAreaView>
-      <View>
-        <Text>frontend app</Text>
-      </View>
-    </SafeAreaView>
-  )
+  return <DynamicTabNavigator />
 }
 
 export default App
