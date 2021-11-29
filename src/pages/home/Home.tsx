@@ -1,14 +1,17 @@
-import * as React from 'react'
+import React, { useEffect } from 'react'
 import { View, SafeAreaView, Text } from 'react-native'
-// import { Input, Button } from 'react-native-elements'
+import { NavigatorUtils } from '../../utils'
+import { Button } from 'react-native-elements'
 
-const Home = () => {
+const Home = (props: any) => {
+  useEffect(() => {
+    console.log('props=>', props)
+  }, [])
   return (
     <SafeAreaView>
       <View>
         <Text>首页</Text>
-        {/* <Input label='验证码' placeholder='请输入验证码' autoCompleteType inputStyle={{ borderBottomColor: '#fff' }} />
-        <Button buttonStyle={{width: 120, alignSelf: 'center'}} type='clear' title="Solid Button" /> */}
+        <Button buttonStyle={{ width: 120, alignSelf: 'center' }} onPress={() => NavigatorUtils.navigator(props.navigation, 'detail')} type='clear' title="home detail" />
       </View>
     </SafeAreaView>
   )
