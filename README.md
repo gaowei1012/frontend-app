@@ -8,3 +8,4 @@
 - [极光推送](https://docs.jiguang.cn//jverification/client/client_plugins/)
 - [极光info](https://docs.jiguang.cn//jpush/guideline/intro/)
 - [集成极光推送SDK](https://zhuanlan.zhihu.com/p/108743706)
+- [本地信息推送](https://github.com/zo0r/react-native-push-notification#readme)
