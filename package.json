@@ -25,6 +25,7 @@
     "react-native": "0.66.3",
     "react-native-elements": "^3.4.2",
     "react-native-gesture-handler": "^1.10.3",
+    "react-native-modal": "^13.0.0",
     "react-native-reanimated": "^2.2.4",
     "react-native-root-toast": "^3.3.0",
     "react-native-safe-area-context": "^3.3.2",
