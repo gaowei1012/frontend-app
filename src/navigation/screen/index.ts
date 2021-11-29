@@ -1,3 +1,4 @@
 import { HomeScreen } from './homeScreen'
+import { DiscoverScreen } from './discoverScreen'
 
-export { HomeScreen }
+export { HomeScreen, DiscoverScreen }
