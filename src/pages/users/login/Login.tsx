@@ -9,7 +9,6 @@ const Login = (props: any) => {
   const onChangePassword = (val: any) => { }
   const _onBlurPassword = () => { }
   const goRetrievePass = () => { }
-  const goRegister = () => { }
   return (
     <SafeAreaView style={styles.loginContainer}>
       <View style={{ marginTop: px2dp(120) }}>
