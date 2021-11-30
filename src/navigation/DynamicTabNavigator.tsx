@@ -4,8 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import TabBarItem from './TabBarItem'
 import * as React from 'react'
 
-import { Settings } from '../pages/setting'
-import { HomeScreen, DiscoverScreen } from './screen'
+import { HomeScreen, DiscoverScreen, ProfileScreen } from './screen'
 
 const Tab = createBottomTabNavigator()
 
@@ -32,7 +31,7 @@ export default function DynamicTabNavigator() {
         })}>
         <Tab.Screen name="home" component={HomeScreen} options={{ tabBarBadge: 3, tabBarLabel: '首页' }} />
         <Tab.Screen name='discover' component={DiscoverScreen} options={{ tabBarLabel: '发现' }}/>
-        <Tab.Screen name="settings" component={Settings} options={{ tabBarLabel: '设置' }} />
+        <Tab.Screen name="settings" component={ProfileScreen} options={{ tabBarLabel: '设置' }} />
       </Tab.Navigator>
     </NavigationContainer>
   )
