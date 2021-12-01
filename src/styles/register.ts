@@ -5,7 +5,7 @@ import { px2dp } from '../utils'
 const styles = StyleSheet.create({
   registerCotainer: {
     flex: 1,
-    marginTop: px2dp(30)
+    backgroundColor: '#fff'
   },
   titleBox: {
     marginLeft: px2dp(28),

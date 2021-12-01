@@ -4,6 +4,7 @@ import { px2dp } from '../utils/px2dp';
 const styles = StyleSheet.create({
   loginContainer: {
     flex: 1,
+    backgroundColor: '#fff'
   },
   submitBox: {
     marginTop: px2dp(50),

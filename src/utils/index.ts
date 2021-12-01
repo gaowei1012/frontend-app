@@ -1,6 +1,7 @@
 import { height, width, px2dp } from './px2dp'
 import { NavigatorUtils } from './navigation'
 import RootToast from './toast'
+import TopNavigationBar from './topNavigationBar'
 
 export {
   height,
@@ -8,4 +9,5 @@ export {
   px2dp,
   RootToast,
   NavigatorUtils,
+  TopNavigationBar,
 }

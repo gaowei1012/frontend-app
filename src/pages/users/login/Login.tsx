@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { View, Text, SafeAreaView, TextInput, TouchableOpacity, Platform, TouchableNativeFeedback } from 'react-native'
-import { px2dp, NavigatorUtils } from '../../../utils'
+import { px2dp, NavigatorUtils, TopNavigationBar } from '../../../utils'
 import { styles } from '../../../styles/login'
 
 const Login = (props: any) => {
@@ -11,6 +11,7 @@ const Login = (props: any) => {
   const goRetrievePass = () => { }
   return (
     <SafeAreaView style={styles.loginContainer}>
+      <TopNavigationBar title='登录' statusBar={{ backgroundColor: '#fff', barStyle: 'dark-content' }} style={{ backgroundColor: '#ffffff' }} />
       <View style={{ marginTop: px2dp(120) }}>
         <View style={styles.textInputBox}>
           <TextInput

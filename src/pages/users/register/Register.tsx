@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { styles } from '../../../styles/register'
+import { TopNavigationBar } from '../../../utils'
 import { View, Text, SafeAreaView, TouchableOpacity, TextInput } from 'react-native'
 
 const Regsiter = () => {
@@ -9,6 +10,7 @@ const Regsiter = () => {
   
   return (
     <SafeAreaView style={styles.registerCotainer}>
+       <TopNavigationBar statusBar={{ backgroundColor: '#fff', barStyle: 'dark-content' }} style={{ backgroundColor: '#ffffff' }} />
       <View style={styles.titleBox}>
         <Text style={styles.title}>输入手机号码</Text>
         <View style={styles.terms}>
