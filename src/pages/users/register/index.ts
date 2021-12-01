@@ -1,3 +1,3 @@
-import Regsiter from './Register'
+import Regsiter from './register'
 
 export { Regsiter }
