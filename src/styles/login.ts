@@ -1,10 +1,13 @@
 import { StyleSheet } from 'react-native';
 import { px2dp } from '../utils/px2dp';
+import { commomStyles } from '../styles/common'
+
+const { flex, defaultBackgroundColor } = commomStyles
 
 const styles = StyleSheet.create({
   loginContainer: {
-    flex: 1,
-    backgroundColor: '#fff'
+    ...flex,
+    ...defaultBackgroundColor
   },
   submitBox: {
     marginTop: px2dp(50),

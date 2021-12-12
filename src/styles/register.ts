@@ -1,11 +1,13 @@
 import { StyleSheet } from 'react-native'
 import { px2dp } from '../utils'
+import { commomStyles } from '../styles/common'
 
+const { flex, defaultBackgroundColor } = commomStyles
 
 const styles = StyleSheet.create({
   registerCotainer: {
-    flex: 1,
-    backgroundColor: '#fff'
+    ...flex,
+    ...defaultBackgroundColor
   },
   titleBox: {
     marginLeft: px2dp(28),

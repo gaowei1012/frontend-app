@@ -1,12 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { View, SafeAreaView, Text } from 'react-native'
 import { NavigatorUtils } from '../../utils'
 import { Button } from 'react-native-elements'
+import { IHomeProps } from '../../types/home'
 
-const Home = (props: any) => {
-  useEffect(() => {
-    console.log('props=>', props)
-  }, [])
+const Home: React.FC<IHomeProps> = (props) => {
+
   return (
     <SafeAreaView>
       <View>
