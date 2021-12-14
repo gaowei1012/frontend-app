@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   container: {
-    backgroundColor: '#85DFD2', // 设置背景颜色
+    // backgroundColor: '#85DFD2', // 设置背景颜色
   },
   title: {
     width: px2dp(200),
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   statusBar: {
-    //height: STATUS_BAR_H,
+    // height: status_bar_h ? status_bar_h : '',
   },
   leftBtnBox: {
     flexDirection: 'row',
