@@ -1,7 +1,9 @@
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { HomeScreen, DiscoverScreen, ProfileScreen } from './screen'
+import DrawerScreen from './DrawerScreen'
 import TabBarItem from './TabBarItem'
+
 
 const Tab = createBottomTabNavigator()
 
@@ -22,7 +24,7 @@ const RootNavigatorBottom = () => {
       tabBarInactiveTintColor: 'gray',
       headerShown: false,
     })}>
-    <Tab.Screen name="home" component={HomeScreen} options={{ tabBarBadge: 3, tabBarLabel: '首页' }} />
+    <Tab.Screen name="home" component={DrawerScreen} options={{ tabBarBadge: 3, tabBarLabel: '首页' }} />
     <Tab.Screen name='discover' component={DiscoverScreen} options={{ tabBarLabel: '发现' }} />
     <Tab.Screen name="profile" component={ProfileScreen} options={{ tabBarLabel: '设置' }} />
   </Tab.Navigator>
